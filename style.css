@@ -1,0 +1,144 @@
+@font-face {
+    font-family: raleway;
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+
+font-face {
+    font-family: raleway;
+    src: url(./fonts/Raleway-Italic-VariableFont_wght.ttf);
+    font-size: italic;
+}
+
+body {
+    font-family: 'oswald', sans-serif;
+    background-color: #0A0216;
+    padding: 0 130px;
+}
+
+header {
+    display: flex;
+    gap: 140px;
+    margin-top: 24px;
+}
+
+.logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 76px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.infoMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 125%;
+
+    margin-bottom: 60px;
+}
+
+.infoMenu a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.inputBox {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+    padding: 12px;
+
+    width: 325px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.inputBox img {
+    width: 15px;
+    height: 15px;
+}
+
+.inputBox input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+a.login {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;   
+    color: #F50395;
+}
+
+.categories {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 125%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.choises {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.neon {
+    color: #FFFFFF;
+    width: 519px;
+    height: 89px;
+    font-family: 'Oswald';
+    padding-left: 143px;
+    margin-top: 180px;
+}
+
+.logotip {
+    display: flex;
+    gap: 120px;
+    color: #FEFEFE;
+    flex-grow: 1px;
+    width: 327px;
+    height: 256px;
+    margin-top: 63px;
+    align-items: center;
+    font-family: 'Oswald';
+    text-align: center;
+    padding-left: 218px;
+}
+
+.brendy {
+    font-family: 'Oswald';
+    font-weight: 500;
+    line-height: 88.92px;
+    color: #FFFFFF;
+    padding-left: 131px;
+    margin-top: 298px;
+}
+
+.brands {
+    display: flex;
+    gap: 120px;
+    flex-grow: 1px;
+    width: 211.06px;
+    height: 208.77px;
+    padding-top: 127.23px;
+    padding-left: 131.94px;
+    margin-bottom: 228px;
+}
