@@ -110,28 +110,37 @@ a.login {
 }
 
 .logotip {
+   margin-bottom: 15px;
+}
+
+.dispination {
     display: flex;
+    justify-content: space-around;
+    font-family: "Oswald";
+    font-weight: 400;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 75px;
+}
+
+.imgelf {
+    display: flex;
+    justify-content: space-around;
     gap: 120px;
-    color: #FEFEFE;
-    flex-grow: 1px;
-    width: 327px;
-    height: 256px;
     margin-top: 63px;
     align-items: center;
-    font-family: 'Oswald';
-    text-align: center;
-    padding-left: 218px;
 }
 
 .brendy {
-    font-family: 'Oswald';
-    font-weight: 500;
-    line-height: 88.92px;
     color: #FFFFFF;
+    font-family: 'Oswald';
+    width: 191px;
     padding-left: 131px;
     margin-top: 298px;
+    height: 89px;
+    font-weight: 500;
 }
-
 .brands {
     display: flex;
     gap: 120px;
