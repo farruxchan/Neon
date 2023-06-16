@@ -22,6 +22,7 @@ header {
     margin-top: 24px;
     padding: 0 130px;
 }
+
 .section {
     padding: 0 130px;
 }
@@ -224,6 +225,12 @@ h2 {
     text-align: center;
 }
 
+.reklama {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
 .brendy {
     color: #FFFFFF;
     font-family: 'Oswald';
@@ -233,6 +240,7 @@ h2 {
     height: 89px;
     font-weight: 500;
 }
+
 .brands {
     display: flex;
     gap: 120px;
@@ -255,6 +263,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+
 .news {
     height: 465px;
     background-image: url(./news.png);
@@ -268,6 +277,7 @@ h2 {
                           "d b";
     position: relative;
 }
+
 .news h6 {
     grid-area: h;
     font-family: 'Raleway';
@@ -278,6 +288,7 @@ h2 {
     margin-left: 50px;
     width: 550px;
 }
+
 .news .date {
     grid-area: d;
     font-family: 'Jost', sans-serif;
@@ -286,6 +297,7 @@ h2 {
     align-self: center;
     margin-left: 77px;
 }
+
 .news .date::before {
     content: '';
     display: inline-block;
@@ -293,6 +305,7 @@ h2 {
     height: 22px;
     background-image: url(../img/dateSlash.svg);
 }
+
 .news .newsButton {
     /*grid-area: b;*/
     height: 68px;
@@ -310,16 +323,19 @@ h2 {
     top: 394px;
     left: 415px;
 }
+
 .news:nth-child(2) {
     background-image: url(./news2.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .news:nth-child(3) {
     background-image: url(./news3.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .news:nth-child(4) {
     background-image: url(./news4.png);
     background-repeat: no-repeat;
@@ -327,13 +343,14 @@ h2 {
 }
 
 .banner {
-    border: 5px solid #FD02D6;
     margin-top: 78px;
     margin-bottom: 180px;
     padding-left: 140px;
     padding-right: 110px;
     padding-top: 60px;
     padding-bottom: 97px;
+
+    background-image: url(./backgroundgamer.png);
 
     display: flex;
     gap: 75px;
