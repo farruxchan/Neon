@@ -254,8 +254,8 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-  }
-  .news {
+}
+.news {
     height: 465px;
     background-image: url(./news.png);
     background-repeat: no-repeat;
@@ -267,8 +267,8 @@ h2 {
                           "h h"
                           "d b";
     position: relative;
-  }
-  .news h6 {
+}
+.news h6 {
     grid-area: h;
     font-family: 'Raleway';
     font-weight: 500;
@@ -277,23 +277,23 @@ h2 {
     margin: 0;
     margin-left: 50px;
     width: 550px;
-  }
-  .news .date {
+}
+.news .date {
     grid-area: d;
     font-family: 'Jost', sans-serif;
     font-size: 20px;
     line-height: 29px;
     align-self: center;
     margin-left: 77px;
-  }
-  .news .date::before {
+}
+.news .date::before {
     content: '';
     display: inline-block;
     width: 10px;
     height: 22px;
     background-image: url(../img/dateSlash.svg);
-  }
-  .news .newsButton {
+}
+.news .newsButton {
     /*grid-area: b;*/
     height: 68px;
     width: 400px;
@@ -309,22 +309,22 @@ h2 {
     position: absolute;
     top: 394px;
     left: 415px;
-  }
-  .news:nth-child(2) {
+}
+.news:nth-child(2) {
     background-image: url(./news2.png);
     background-repeat: no-repeat;
     background-size: contain;
-  }
-  .news:nth-child(3) {
+}
+.news:nth-child(3) {
     background-image: url(./news3.png);
     background-repeat: no-repeat;
     background-size: contain;
-  }
-  .news:nth-child(4) {
+}
+.news:nth-child(4) {
     background-image: url(./news4.png);
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}
 
 .banner {
     border: 5px solid #FD02D6;
@@ -349,11 +349,18 @@ h2 {
     display: block;
     width: 70px;
     height: 50px;
-    border-color: #0A0216;
+    border-color: #FFFFFF;
 
     position: absolute;
     bottom: -5px;
-    left: -5px;  
+    left: -5px;
+}
+
+.bannerRightCorner {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    border-color: #0A0216;
 }
 
 .banner > div {
