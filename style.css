@@ -21,6 +21,7 @@ header {
     gap: 140px;
     margin-top: 24px;
     padding: 0 130px;
+    margin-left: 135px;
 }
 
 .section {
@@ -119,6 +120,7 @@ a.login {
 
 .logotip {
    margin-bottom: 15px;
+   margin-left: 135px;
 }
 
 .dispination {
@@ -227,8 +229,45 @@ h2 {
 
 .reklama {
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 50px;
+    margin-left: 135px;
+}
+
+.firstBlock {
+    width: 530px;
+    height: 450px;
+    background-image: url(./worktable.png);
+    background-repeat: no-repeat;
+    block-size: contain;
+}
+
+.secondBlock {
+    width: 573px;
+    height: 378px;
+    background-image: url(./desktoptext.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.secondBlock p {
+    margin: 0;
+    margin-top: 70px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.thirdBlock {
+    width: 530px;
+    height: 450px;
+    background-image: url(./limamajor.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .brendy {
@@ -262,6 +301,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    margin-left: 135px;
 }
 
 .news {
@@ -310,7 +350,7 @@ h2 {
     /*grid-area: b;*/
     height: 68px;
     width: 400px;
-    background-image: url(../img/newsbuttonbg.png);
+    background-image: url(./newsbuttonbg.png);
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
@@ -320,8 +360,8 @@ h2 {
     line-height: 35px;
     padding: 19px 0;
     position: absolute;
-    top: 394px;
-    left: 415px;
+    top: 370px;
+    left: 385px;
 }
 
 .news:nth-child(2) {
@@ -345,6 +385,7 @@ h2 {
 .banner {
     margin-top: 78px;
     margin-bottom: 180px;
+    margin-left: 135px;
     padding-left: 140px;
     padding-right: 110px;
     padding-top: 60px;
@@ -359,6 +400,15 @@ h2 {
     flex-wrap: wrap-reverse;
 
     position: relative;
+}
+
+.banner a {
+    background-image: url(./backgroundimage.png);
+    position: absolute;
+    width: 400px;
+    height: 68px;
+    text-align: center;
+    justify-content: center;
 }
 
 .banner::before {
