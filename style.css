@@ -665,8 +665,30 @@ aside label {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-left: 555px;
-    margin-top: -1410px;
+    margin-top: 120px;
 }
+
+.subcatalog {
+    display: flex;
+    row-gap: 20px;
+    margin-left: 556px;
+    margin-top: -1130px;
+}
+
+.sort {
+    display: flex;
+    row-gap: 20px;
+    margin-left: 556px;
+    font-family: 'Raleway';
+    font-size: 20px;
+    line-height: 23px;
+    color: #9D9C9C;
+}
+
+.sortby :nth-child(2) {
+    padding-right: 20px;
+}
+
 
 @media (max-width: 1400px) {
     .footerMenu {
