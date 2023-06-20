@@ -18,10 +18,12 @@ body {
 
 header {
     display: flex;
-    gap: 140px;
+    gap: calc(20px + 6.3vw);
     margin-top: 24px;
     padding: 0 130px;
-    margin-left: 135px;
+    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .section {
@@ -33,16 +35,22 @@ header {
     display: flex;
     align-items: center;
     height: 76px;
+    flex-basis: 240px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 nav {
     flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 500px;
 }
 
 .infoMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 
     font-family: 'Raleway';
     font-size: 18px;
@@ -93,6 +101,7 @@ a.login {
     font-weight: 400;
     font-size: 22px;
     line-height: 125%;
+    gap: 20px;
 
     display: flex;
     justify-content: space-around;
@@ -153,11 +162,13 @@ footer .logo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .legal {
     display: flex;
     gap: 120px;
+    flex-wrap: wrap;
 }
 
 .social {
@@ -166,6 +177,7 @@ footer .logo {
     align-items: center;
     font-size: 20px;
     line-height: 24px;
+    flex-wrap: wrap;
 }
 
 .social a {
@@ -176,4 +188,88 @@ footer .logo {
     font-family: 'Raleway';
     font-size: 20px;
     line-height: 24px;
+}
+
+.breadcrumbs {
+    padding: 0 130px;
+}
+
+.breadcrumbs a {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.breadcrumbs a::before {
+    content: '/ ';
+}
+
+.breadcrumbs a:first-child::before {
+    display: none;
+}
+
+body > h2 {
+    padding: 0 130px;
+}
+
+main {
+    padding: 0 130px;
+    display: flex;
+    gap: 20px;
+}
+
+aside {
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.cstalog {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+aside a {
+    display: block;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 25px;
+}
+
+aside h5 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+aside label {
+    display: block;
+    justify-content: space-between;
+    margin-top: 33px;
+
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+    color: #F5F5F5;
+}
+
+aside label input {
+    width: 23px;
+    height: 23px;
+    background: transparent;
+}
+
+@media (max-width: 1400px) {
+    .footerMenu {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

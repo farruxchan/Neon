@@ -18,10 +18,11 @@ body {
 
 header {
     display: flex;
-    gap: 140px;
+    gap: calc(20px + 6.3vw);
     margin-top: 24px;
     padding: 0 130px;
-    margin-left: 135px;
+
+    flex-wrap: wrap;
 }
 
 .section {
@@ -33,21 +34,27 @@ header {
     display: flex;
     align-items: center;
     height: 76px;
+    flex-basis: 240px;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 nav {
     flex-grow: 1;
+    flex-basis: 500;
+    flex-shrink: 1;
 }
 
 .infoMenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 
     font-family: 'Raleway';
     font-size: 18px;
     line-height: 125%;
-    flex-wrap: wrap;
 
     margin-bottom: 60px;
 }
@@ -55,6 +62,9 @@ nav {
 .infoMenu a {
     color: #FFFFFF;
     text-decoration: none;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .inputBox {
@@ -97,6 +107,7 @@ a.login {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .categories a {
@@ -516,11 +527,13 @@ footer .logo {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .legal {
     display: flex;
     gap: 120px;
+    flex-wrap: wrap;
 }
 
 .social {
@@ -529,6 +542,7 @@ footer .logo {
     align-items: center;
     font-size: 20px;
     line-height: 24px;
+    flex-wrap: wrap;
 }
 
 .social a {
@@ -539,4 +553,141 @@ footer .logo {
     font-family: 'Raleway';
     font-size: 20px;
     line-height: 24px;
+}
+
+/* Каталог */
+
+.breadcrumbs {
+    padding: 0 130px;
+    margin-top: 68px;
+}
+
+.breadcrumbs a {
+    font-family: 'Raleway';
+    font-size: 20px;
+    line-height: 125%;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.breadcrumbs a::before {
+    content: '/ ';
+}
+
+.breadcrumbs a:first-child::before {
+    display: none;
+}
+
+body > h2 {
+    padding: 0 130px;
+}
+
+main {
+    padding: 0 130px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.catalog {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+aside a {
+    display: block;
+    text-decoration: none;
+    color: #F5F5F5;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+
+    margin-top: 25px;
+}
+
+aside h5 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+aside label {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+    color: #F5F5F5;
+}
+
+aside label input {
+    width: 23px;
+    height: 23px;
+    background: transparent;
+}
+
+aside label {
+    background-image: url(./checkboxing.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.secondary {
+    background-image: url(./cancellation.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.6);
+    
+    display: flex;
+
+    position: relative;
+    width: 221px;
+    height: 55px;
+    justify-content: space-around;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-left: 555px;
+    margin-top: -1250px;
+}
+
+.sort {
+    display: flex;
+    gap: 20px;
+}
+
+.sortby {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+@media (max-width: 1400px) {
+    .footerMenu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 950px) {
+    .footerMenu {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
