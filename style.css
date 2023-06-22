@@ -689,6 +689,33 @@ aside label {
     padding-right: 20px;
 }
 
+.aorusm {
+    width: 1650px;
+    height: 636px;
+    margin-left: 135px;
+    margin-top: 287px;
+}
+
+.aorusm2 {
+    width: 1650px;
+    height: 636px;
+    margin-left: 135px;
+    margin-top: 200px;
+}
+
+.aorusm3 {
+    width: 1650px;
+    height: 815px;
+    margin-left: 135px;
+    margin-top: 200px;
+}
+
+.aorusm4 {
+    width: 1650px;
+    height: 636px;
+    margin-left: 135px;
+    margin-top: 200px;
+}
 
 @media (max-width: 1400px) {
     .footerMenu {
