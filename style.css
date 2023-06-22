@@ -715,6 +715,7 @@ aside label {
     height: 636px;
     margin-left: 135px;
     margin-top: 200px;
+    margin-bottom: 400px;
 }
 
 @media (max-width: 1400px) {
